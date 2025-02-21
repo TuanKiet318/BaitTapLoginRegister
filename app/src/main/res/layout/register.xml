@@ -16,14 +16,12 @@
         app:layout_constraintTop_toTopOf="parent">
     </ImageView>
 
-    <!-- Tiêu đề "Welcome Back" -->
-
-    <!-- Ô nhập Email -->
     <TextView
         android:id="@+id/tvWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Create\nAccount"
+        android:textStyle="bold"
         android:textColor="#3b608c"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +29,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/backGroundTop"
         tools:ignore="MissingConstraints"
-        android:paddingBottom="10dp"/>
+        android:paddingBottom="10dp"
+        />
 
     <ImageView
         android:id="@+id/imgName"
@@ -146,13 +145,14 @@
         app:layout_constraintTop_toBottomOf="@id/edtPassword" />
 
     <ImageButton
-        android:id="@+id/btnCreate"
+        android:id="@id/btnCircle"
         android:layout_width="57dp"
         android:layout_height="82dp"
         android:layout_marginTop="4dp"
         android:background="#00000000"
         android:scaleType="centerInside"
         android:src="@drawable/btn_arrow2"
+        android:contentDescription="Register button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.915"
         app:layout_constraintStart_toStartOf="parent"
